@@ -7,6 +7,7 @@ def is_correct_ip_format(ip):
         return False
 
 print(is_correct_ip_format("192.168.0.1"))
+print(is_correct_ip_format("192.168.0.1."))
 print(is_correct_ip_format("192.168.0.1000"))
 print(is_correct_ip_format("192.168.1"))
 print(is_correct_ip_format("192.168.0.0.1"))
