@@ -17,6 +17,8 @@ for m in re.finditer("a","aabaa"):
 for m in re.finditer("[0-9]","a1b20c300"):
     print(m.group())
 
+print(re.findall("[0-9]","a1b20c300"))
+
 for m in re.finditer("[0-9]*","a1b20c300"):
     print(m.group())
 
