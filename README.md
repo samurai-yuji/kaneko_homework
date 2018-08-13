@@ -1,6 +1,7 @@
 # reg_test.py
 
 ```
+$ python reg_test.py
 <class '_sre.SRE_Match'>
 a
 <class 'list'>
