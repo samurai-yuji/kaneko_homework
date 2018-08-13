@@ -19,3 +19,8 @@ b = reduce(lambda x,y: x+y, a)
 print(type(b))
 print(b)
 
+c = {"k1":10, "k2":20, "k3":30}
+d = dict([ (x,y*2) for x,y in c.items() ])
+print(type(d))
+print(d)
+
