@@ -53,9 +53,37 @@ print("Matched.") if re.search("^ab{1,3}$","abbbbb") else print("Not matched..."
 #####
 print()
 
-s = re.search("a(b)c","abc")
-print(s.group(1))
+try:
+    s = re.search("a(b)c","abc")
+    print(s.group())
+    print(s.group(1))
+except IndexError as e:
+    print("Error! {0}".format(e))
 
-s = re.search("abc","abc")
-print(s.group(1))
+print()
+try:
+    s = re.search("abc","abc")
+    print(s.group())
+    print(s.group(1))
+except IndexError as e:
+    print("Error! {0}".format(e))
 
+#####
+print()
+
+for m in re.finditer("\d+|\d+\.\d*","10a 20.1b 30.1c a40."):
+    print(m.group())
+
+print()
+for m in re.finditer("\d+\.*\d*","10a 20.1b 30.1c a40."):
+    print(m.group())
+
+print()
+for m in re.finditer("\d[.\d]*","10a 20.1b 30.1c a40."):
+    print(m.group())
+
+#####
+print()
+
+print(float("100.0"))
+print(float("100."))
