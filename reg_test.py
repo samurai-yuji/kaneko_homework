@@ -82,6 +82,10 @@ print()
 for m in re.finditer("\d[.\d]*","10a 20.1b 30.1c a40."):
     print(m.group())
 
+print()
+for m in re.finditer("\d+\.\d*|\d+","10a 20.1b 30.1c a40."):
+    print(m.group())
+
 #####
 print()
 
