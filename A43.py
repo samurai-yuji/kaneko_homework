@@ -1,5 +1,5 @@
-import re
 """
+import re
 def regx(s):
     return re.search('9$' , str(s))
 
